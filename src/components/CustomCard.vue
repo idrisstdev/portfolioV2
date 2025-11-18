@@ -1,5 +1,5 @@
-<template>
-  <div class="border-1 md:flex flex-col justify-content-around mt-4">
+<!-- <template>
+  <div class="bg-green-1000 md:flex flex-col justify-content-around mt-4">
     <div class="md:w-3">Mars 2023 - Mai 2025</div>
     <div class="md:w-9">
       <div><span class="font-bold">Intitulé du poste - Entreprise</span></div>
@@ -19,10 +19,9 @@
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps({
-});
-console.log(props);
-
+import type { Experience } from '@/data/entity/experience'
+const props = defineProps<{ experiences: Experience[] }>()
+console.log(props)
 </script>
 
 <style scoped>
@@ -30,4 +29,9 @@ li {
   text-decoration: none;
   list-style: none;
 }
-</style>
+
+.bg-green-1000:hover {
+  background-color: #2c4e26;
+  cursor: pointer;
+}
+</style> -->
