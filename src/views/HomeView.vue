@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-screen-xl mx-auto lg:flex lg:gap-6 lg:px-0 md:px-3 sm:px-5 px-7">
-    <!-- Colonne gauche : sticky dans la page globale -->
+    <!-- Colonne gauche -->
     <div class="lg:w-5 pt-9 lg:sticky lg:top-0 lg:self-start lg:h-fit">
       <h1 class="text-5xl"><a href="/">Idriss TAMERI</a></h1>
       <h2 class="mt-5 text-3xl font-medium">Développeur front-end</h2>
@@ -14,13 +14,15 @@
       <CustomFooter />
     </div>
 
-    <!-- Colonne droite : contenu scrollable naturellement -->
-    <div class="lg:w-full pt-9">
+    <!-- Colonne droite -->
+    <div class="lg:w-full mb-5 pt-9">
       <ResumeCard />
 
       <ExperienceList />
 
       <ProjectList />
+
+      <GreetingFooter />
     </div>
   </div>
 </template>
@@ -30,6 +32,7 @@ import CustomFooter from '@/components/layout/CustomFooter.vue'
 import ExperienceList from '@/components/experiences/ExperienceList.vue'
 import ResumeCard from '@/components/ResumeCard.vue'
 import ProjectList from '@/components/projects/ProjectList.vue'
+import GreetingFooter from '@/components/GreetingFooter.vue'
 </script>
 
 <style scoped>

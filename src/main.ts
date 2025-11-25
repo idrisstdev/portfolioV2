@@ -1,5 +1,5 @@
 import '@fontsource/inter'
-import './assets/main.css'
+import '@/assets/css/main.css'
 import '/node_modules/primeflex/primeflex.css'
 
 import { createApp } from 'vue'
