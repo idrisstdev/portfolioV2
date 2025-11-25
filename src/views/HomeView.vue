@@ -1,61 +1,38 @@
 <template>
   <div class="max-w-screen-xl mx-auto lg:flex lg:gap-6 lg:px-0 md:px-3 sm:px-5 px-7">
-    <!-- Colonne gauche : sticky dans la page globale -->
+    <!-- Colonne gauche -->
     <div class="lg:w-5 pt-9 lg:sticky lg:top-0 lg:self-start lg:h-fit">
       <h1 class="text-5xl"><a href="/">Idriss TAMERI</a></h1>
-      <h2 class="text-3xl font-medium">Développeur front-end</h2>
+      <h2 class="mt-5 text-3xl font-medium">Développeur front-end</h2>
       <p>Créateur d'application web et mobile</p>
-      <p>Situé sur Lyon</p>
-      <ul>
-        <li>A propos de moi</li>
-        <li><a href="#Projets">Projets</a></li>
-        <li>Expériences</li>
+      <p>Situé dans la région Lyonnaise</p>
+      <ul class="mt-4">
+        <li class=""><a href="#Resume">À propos de moi</a></li>
+        <li class="mt-2"><a href="#Experiences">Expériences</a></li>
+        <li class="mt-2"><a href="#Projets">Projets</a></li>
       </ul>
       <CustomFooter />
     </div>
 
-    <!-- Colonne droite : contenu scrollable naturellement -->
-    <div class="lg:w-full pt-9">
-      <div class="Resume">
-        <p>
-          Développeur diplomé en 2021, j'ai affuté mes compétences en apprennant de nombreux
-          langages que ce soit côté front avec Vue.JS, React, Flutter pour le mobile ou back avec
-          Java Springboot ou même fullstack avec Symfony. De ce fait je suis à l'aise avec la
-          plupart des environnements de développement et très flexible. Apprendre un nouveau langage
-          ne m'effraie pas.
-        </p>
-        <br />
-        <p>
-          De part mon expérience et préference, j'ai une appétence pour le front. Je peux réaliser
-          du site vitrine, aux applications web voir mobiles jusqu'à la création d'API.
-        </p>
-      </div>
+    <!-- Colonne droite -->
+    <div class="lg:w-full mb-5 pt-9">
+      <ResumeCard />
 
-      <div class="Projets" id="Projets">
-        <h2>Projets</h2>
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-      </div>
+      <ExperienceList />
 
-      <div class="Experiences">
-        <h2>Expériences</h2>
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-      </div>
+      <ProjectList />
+
+      <GreetingFooter />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import CustomFooter from '@/components/layout/CustomFooter.vue'
-import CustomCard from '@/components/CustomCard.vue'
+import ExperienceList from '@/components/experiences/ExperienceList.vue'
+import ResumeCard from '@/components/ResumeCard.vue'
+import ProjectList from '@/components/projects/ProjectList.vue'
+import GreetingFooter from '@/components/GreetingFooter.vue'
 </script>
 
 <style scoped>
