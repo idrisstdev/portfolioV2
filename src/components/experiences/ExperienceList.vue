@@ -21,17 +21,17 @@ experiences.value.push({
   dateDebut: new Date('2023-03-13'),
   dateFin: new Date('2025-05-11'),
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sequi. Aspernatur sed quia debitis cum. Voluptates blanditiis esse necessitatibus eligendi vitae molestias nisi, .maiores architecto sit tempore, at veniam debitis.',
+    "Maintenance d'anciens projets php. Mise à jour de projets Vue2 vers Vue3. Création d'une application web & mobile permettant la gestion de documents. Travail en collaboration avec developpeurs, chef de projets, analystes et l'équipe UI/UX.",
   entreprise: 'OKTEO',
   intitule: 'Developpeur front-end',
-  techno: ['Flutter', 'Java Springboot', 'Vue'],
+  techno: ['Flutter', 'Java Springboot', 'Vue', 'PHP'],
   url: 'https://www.okteo.fr/',
 })
 experiences.value.push({
   dateDebut: new Date('2021-04-12'),
   dateFin: new Date('2022-01-31'),
   description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sequi. Aspernatur sed quia debitis cum. Voluptates blanditiis esse necessitatibus eligendi vitae molestias nisi, .maiores architecto sit tempore, at veniam debitis.',
+    'Réalisations de tests unitaires. Maintenance et corrections de bugs. Réalisations de spécifiques en javascript. Refactoring et ajout de nouvelles fonctionnalités du site interne',
   entreprise: "Interactiv' Technologies",
   intitule: 'Developpeur Web',
   techno: ['Symfony', 'PHP', 'JQuery'],

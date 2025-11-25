@@ -1,6 +1,8 @@
 <template>
   <div class="bg-green-1000 md:flex flex-col justify-content-around mt-4 py-3 px-4">
-    <div class="md:w-3"><img :src="project.picture" alt="" /></div>
+    <div class="md:w-3">
+      <img :src="project.picture" width="156" height="85" :alt="project.alt" />
+    </div>
     <div class="md:w-9 md:pl-4">
       <div class="mb-2">
         <span class="font-bold">{{ project.name }}</span>
