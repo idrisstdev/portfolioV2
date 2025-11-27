@@ -7,7 +7,7 @@ const plugins: PluginOption[] = [vue()]
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolioV2/',
+  base: './',
   plugins,
   resolve: {
     alias: {
