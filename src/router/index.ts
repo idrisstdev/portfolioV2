@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -10,15 +10,6 @@ const router = createRouter({
       component: HomeView,
     },
   ],
-  // scrollBehavior(to) { pour les href:"#id"
-  //   if (to.hash) {
-  //     return {
-  //       el: to.hash,
-  //       behavior: 'smooth',
-  //     }
-  //   }
-  //   return { top: 0 }
-  // },
 })
 
 export default router
