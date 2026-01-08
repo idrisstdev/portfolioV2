@@ -32,6 +32,14 @@ const isModalVisible = ref(false)
 const projects = ref<Project[]>([])
 
 projects.value.push({
+  description: 'Projet personnel de création de site pour un restaurant',
+  picture: new URL('@/assets/img/foxyfactory.png', import.meta.url).href,
+  alt: 'Image du projet web Foxy Factory',
+  name: 'Foxy Factory',
+  techno: ['Nuxt'],
+  url: 'https://foxyfactory.vercel.app/',
+})
+projects.value.push({
   description: 'Projet personnel de création de blog en Symfony',
   picture: 'https://picsum.photos/156/85',
   alt: 'Image generée aléatoirement',
