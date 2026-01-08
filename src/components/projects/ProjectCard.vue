@@ -32,7 +32,7 @@ li {
 }
 
 .bg-green-1000:hover {
-  background-color: #2c4e26;
+  background-color: #222b41;
   cursor: pointer;
   border-radius: 0.35rem;
 }
