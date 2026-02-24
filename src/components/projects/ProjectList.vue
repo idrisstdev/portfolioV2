@@ -32,6 +32,14 @@ const isModalVisible = ref(false)
 const projects = ref<Project[]>([])
 
 projects.value.push({
+  description: 'Projet personnel tracker d\'informations nutritionnelles',
+  picture: new URL('@/assets/img/nutrigoal.png', import.meta.url).href,
+  alt: 'Image du projet web NutriGoal',
+  name: 'NutriGoal',
+  techno: ['Nextjs'],
+  url: 'https://nutrigoal-id.vercel.app/',
+})
+projects.value.push({
   description: 'Projet personnel de création de site pour un restaurant',
   picture: new URL('@/assets/img/foxyfactory.png', import.meta.url).href,
   alt: 'Image du projet web Foxy Factory',
